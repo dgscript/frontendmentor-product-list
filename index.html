@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Product list with cart</title>
+</head>
+
+<body>
+
+<div class="order-confirmed-wrapper">
+  
+  <div class="order-confirmed-container">
+    <img src="assets/images/icon-order-confirmed.svg">
+    <p style="font-size: 2rem; font-weight: bold;">Order Confirmed</p>
+    <p>We hope you enjoy your food!</p>
+      <div class="order-confirmed-itens">
+        <!-- cards -->
+        <div class="order-confirmed-cards-wrapper">
+
+          <!-- <div class="order-confirmed-card">
+            <div style="display: flex;">
+              <img src="assets/images/image-baklava-thumbnail.jpg">
+              <div class="order-confirmed-card-description">
+                <p class="order-confirmed-card-title">Classic Tiramissu</p>
+                <div style="display: flex; gap: 10px;">
+                  <p class="order-confirmed-card-amount">1x</p>
+                  <p class="order-confirmed-card-price">@ $0.00</p>
+                </div>
+              </div>
+            </div>
+            <p class="order-confirmed-card-total">$0.00</p>
+          </div> -->
+
+        </div>
+
+        <div style="display: flex; justify-content: space-between; align-items: center; padding: 20px 0;">
+            <p>Order Total</p>
+            <p class="order-confirmed-total-value" style="font-size: 2rem; font-weight: bold;">$0.00</p>
+        </div>
+      </div>
+    <button class="start-new-order">Start New Order</button>
+  </div>
+
+</div>
+
+<div class="margin-wrapper">
+  <div class="wrapper">
+
+    <div class="products-container">
+      <h2 id="product-type">Desserts</h2>
+      <div id="cards-container">
+
+        <!-- <div class="card">
+          <div class="card-image-container">
+            <img src="assets/images/image-waffle-desktop.jpg" width="100%">
+            <div class="add-to-cart">
+              <button class="add-to-cart-button"><img src="assets/images/icon-add-to-cart.svg">Add to Cart</button>
+              <div class="item-amount-container">
+                <button class="increaseAmount">+</button>
+                <span class="item-amount-counter" data-amount="0">0</span>
+                <button class="decreaseAmount">-</button>
+              </div>
+            </div>
+          </div>
+          <div class="card-content">
+            <p class="product-name1">Waffle</p>
+            <p class="product-name2">Waffle with Berries</p>
+            <p class="content-price">$6.50</p>
+          </div>
+        </div> -->
+
+      </div>
+    </div>
+
+    <div class="cart-container">
+      <p id="your-cart">Your Cart (0)</p>
+
+      <div class="empty-cart-page">
+        <img src="assets/images/illustration-empty-cart.svg">
+        <p>Your added items will appear here</p>
+      </div>
+
+      <div class="cart-product-amount-container">
+        <div id="cart-product-amount">
+
+          <!-- <div class="product-in-cart">
+            <p class="product-in-cart-title">Classic Tiramissu</p>
+            <div style="display: flex; gap: 10px; margin-top: 5px;">
+              <p class="product-in-cart-amount">1x</p>
+              <p class="product-in-cart-value">@ $5.50</p>
+              <p class="product-in-cart-value-total">$5.50</p>
+            </div>
+            <button class="remove-cart-item"><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="none" viewBox="0 0 10 10"><path fill="#CAAFA7" d="M8.375 9.375 5 6 1.625 9.375l-1-1L4 5 .625 1.625l1-1L5 4 8.375.625l1 1L6 5l3.375 3.375-1 1Z"/></svg></button>
+          </div> -->
+
+        </div>
+        <div class="product-total">
+          <p>Order Total</p>
+          <p id="price-total">$0.00</p>
+        </div>
+        <div class="carbon-neutral">
+          <img src="assets/images/icon-carbon-neutral.svg">
+          <p>This is a <b>carbon-neutral</b> delivery</p>
+        </div>
+        <button id="confirm-order-button">Confirm Order</button>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+<script src="script.js"></script>
+<!-- github.com/rezird -->
+</body>
+</html>
