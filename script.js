@@ -237,4 +237,4 @@ async function loadProducts() {
 }
 loadProducts()
 
-/* github.com/rezird */
+/* github.com/macropunk */
