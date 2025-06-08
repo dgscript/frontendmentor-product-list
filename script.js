@@ -10,7 +10,6 @@ let itemAmountCache = 0;
 let cartPriceTotal = 0.0;
 
 document.addEventListener("DOMContentLoaded", () => {
-  loadProducts();
   setTimeout(() => {
     document.getElementById("loading-screen").style.opacity = 0;
     setTimeout(() => {
@@ -313,5 +312,6 @@ async function loadProducts() {
     });
   });
 }
+loadProducts();
 
 /* github.com/macropunk */
