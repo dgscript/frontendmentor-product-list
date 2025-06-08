@@ -10,11 +10,13 @@ let itemAmountCache = 0;
 let cartPriceTotal = 0.0;
 
 document.addEventListener("DOMContentLoaded", () => {
-  document.getElementById("loading-screen").style.opacity = 0;
   loadProducts();
   setTimeout(() => {
-    document.getElementById("loading-screen").style.display = "none";
-  }, 1100);
+    document.getElementById("loading-screen").style.opacity = 0;
+    setTimeout(() => {
+      document.getElementById("loading-screen").style.display = "none";
+    }, 1100);
+  }, 500);
 });
 
 /* load the products */
